@@ -5,6 +5,6 @@ module('Unit | Helper | math');
 
 // Replace this with your real tests.
 test('it works', function(assert) {
-  var result = math(42);
+  var result = math([41, '+', 1]);
   assert.ok(result);
 });
