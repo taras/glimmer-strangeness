@@ -1,0 +1,7 @@
+{{#blog-posts posts=model page=page as |post|}}
+  <article>{{post.title}}</article>
+{{/blog-posts}}
+{{#if (gte page 2)}}
+  {{#link-to 'posts.index' (query-params page=(math page '-' 1))}}Previous Page{{/link-to}}
+{{/if}}
+{{#link-to 'posts.index' (query-params page=(math page '+' 1))}}Next Page{{/link-to}}

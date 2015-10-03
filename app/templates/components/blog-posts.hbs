@@ -1,0 +1,5 @@
+{{#each posts as |post|}}
+  {{yield post}}
+{{/each}}
+<p>Computed {{join ids ', '}}</p> 
+<p>Actual: {{join _ids ', '}}</p>
